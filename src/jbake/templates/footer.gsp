@@ -1,19 +1,15 @@
-		</div>
-		<div id="push"></div>
+</div>
+</main>
+<footer class="mdl-mini-footer">
+    <div class="mdl-mini-footer--left-section">
+        <div class="mdl-logo">Groovy Guides</div>
+        <p>&copy; 2015</p>
     </div>
-    
-    <div id="footer">
-      <div class="container">
-        <p class="muted credit">&copy; 2014 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake ${version}</a></p>
-      </div>
+    <div class="mdl-mini-footer--right-section">
+        <p>Baked with <a href="http://jbake.org">JBake ${version}</a></p>
     </div>
-    
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>js/jquery-1.11.1.min.js"></script>
-    <script src="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>js/bootstrap.min.js"></script>
-    <script src="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>js/prettify.js"></script>
-    
-  </body>
+</footer>
+
+
+</body>
 </html>

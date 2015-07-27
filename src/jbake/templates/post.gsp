@@ -1,15 +1,15 @@
 <%include "header.gsp"%>
-	
-	<%include "menu.gsp"%>
-	
-	<div class="page-header">
-		<h1>${content.title}</h1>
-	</div>
 
-	<p><em>${content.date.format("dd MMMM yyyy")}</em></p>
+<article>
+	<header>
+		<h1>${content.title}</h1>
+	</header>
 
 	<p>${content.body}</p>
 
-	<hr />
-	
+	<footer>
+		<p>${content.date.format("dd MMMM yyyy")}</p>
+	</footer>
+</article>
+
 <%include "footer.gsp"%>

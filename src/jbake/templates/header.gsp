@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8"/>
-    <title><%if (content.title) {%>${content.title}<% } else { %>JBake<% }%></title>
+    <title><%if (content.title) {%>${content.title}<% } else { %>Groovy Guides<% }%></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -10,23 +10,31 @@
     <meta name="generator" content="JBake">
 
     <!-- Le styles -->
-    <link href="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>css/bootstrap.min.css" rel="stylesheet">
-    <link href="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>css/asciidoctor.css" rel="stylesheet">
-    <link href="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>css/base.css" rel="stylesheet">
-    <link href="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>css/prettify.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.blue_grey-blue.min.css"/>
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>js/html5shiv.min.js"></script>
-    <![endif]-->
+    <link href="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>css/local.css" rel="stylesheet">
 
-    <!-- Fav and touch icons -->
-    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
     <link rel="shortcut icon" href="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>favicon.ico">
-  </head>
-  <body onload="prettyPrint()">
-    <div id="wrap">
+</head>
+<body class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
+<!-- Uses a header that scrolls with the text, rather than staying locked at the top -->
+<header class="mdl-layout__header mdl-layout__header--scroll">
+    <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <h1 class="mdl-layout-title">Groovy Guides</h1>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation -->
+        <%include "navigation.gsp"%>
+
+    </div>
+</header>
+<div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Groovy Guides</span>
+    <%include "navigation.gsp"%>
+</div>
+<main class="mdl-layout__content">
+    <div class="page-content">
    

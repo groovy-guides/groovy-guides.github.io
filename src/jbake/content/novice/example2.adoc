@@ -1,10 +1,11 @@
-= Fourth Post
-Jonathan Bullock
+= Example 2
+Fred Nurk
 2013-10-17
-:jbake-type: post
+:jbake-type: guide
+:jbake-tags: general,sql
 :jbake-status: published
-:jbake-tags: blog, asciidoc
-:idprefix:
+:jbake-description: I am the guide description
+:jbake-level: novice
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel diam purus. Curabitur ut nisi lacus.
 

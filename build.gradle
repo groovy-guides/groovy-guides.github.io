@@ -1,16 +1,12 @@
 buildscript {
     repositories {
-        //mavenLocal() // needed to use the local JBake 2.3.0 build
         jcenter()
     }
-
-
     dependencies {
-        classpath 'me.champeau.gradle:jbake-gradle-plugin:0.2'
+        classpath 'org.pegdown:pegdown:1.5.0'
         classpath 'org.asciidoctor:asciidoctor-java-integration:0.1.4'
         classpath 'org.codehaus.groovy:groovy-all:2.4.4'
     }
-
 }
 
 plugins {
@@ -19,8 +15,17 @@ plugins {
     id 'groovy'
 }
 
+repositories {
+    jcenter()
+}
+
 jbake {
     version  = jBakeVersion
+}
+
+task publish(type: GradleBuild) {
+    buildFile = 'publish.gradle'
+    tasks = ['publishGhPages']
 }
 
 task wrapper(type: Wrapper) {
