@@ -3,7 +3,7 @@
 
 It can be handy to run the following whilst updating content:
 
-    gradle jbake --continuous
+    gradle -i jbake --continuous
 
 To view the output via a local http server:
 
