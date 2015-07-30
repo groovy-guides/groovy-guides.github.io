@@ -1,0 +1,8 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'org.apache.httpcomponents:httpcore:4.4.1'
+    }
+}
