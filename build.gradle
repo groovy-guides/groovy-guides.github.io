@@ -6,6 +6,7 @@ buildscript {
         classpath 'org.pegdown:pegdown:1.5.0'
         classpath 'org.asciidoctor:asciidoctor-java-integration:0.1.4'
         classpath 'org.codehaus.groovy:groovy-all:2.4.4'
+        classpath 'org.apache.httpcomponents:httpcore:4.4.1'
     }
 }
 
@@ -31,3 +32,11 @@ task publish(type: GradleBuild) {
 task wrapper(type: Wrapper) {
     gradleVersion = project.gradleVersion
 }
+
+/*
+task runServer(type: Server) {
+    baseDir = 'build/jbake'
+}
+*/
+
+
