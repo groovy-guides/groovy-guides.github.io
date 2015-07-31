@@ -1,12 +1,13 @@
 buildscript {
     repositories {
         jcenter()
+        mavenLocal()
     }
     dependencies {
         classpath 'org.pegdown:pegdown:1.5.0'
         classpath 'org.asciidoctor:asciidoctor-java-integration:0.1.4'
         classpath 'org.codehaus.groovy:groovy-all:2.4.4'
-        classpath 'org.apache.httpcomponents:httpcore:4.4.1'
+        classpath 'io.github.groovyguides.build:dodgyserver-gradle-plugin:0.1-SNAPSHOT'
     }
 }
 
@@ -14,14 +15,22 @@ plugins {
     id 'me.champeau.jbake' version '0.2'
     id 'idea'
     id 'groovy'
+
 }
 
-repositories {
-    jcenter()
-}
+apply plugin: 'io.github.groovyguides.build'
 
 jbake {
     version  = jBakeVersion
+}
+
+task jbakeServerStart(type: io.github.groovyguides.build.BasicWebServerStartTask, dependsOn: jbake) {
+    httpPort = 9999
+    documentRoot = jbake.output
+}
+
+task jbakeServerStop(type: io.github.groovyguides.build.BasicWebServerStopTask) {
+    httpPort = 9999
 }
 
 task publish(type: GradleBuild) {
@@ -32,11 +41,3 @@ task publish(type: GradleBuild) {
 task wrapper(type: Wrapper) {
     gradleVersion = project.gradleVersion
 }
-
-/*
-task runServer(type: Server) {
-    baseDir = 'build/jbake'
-}
-*/
-
-
