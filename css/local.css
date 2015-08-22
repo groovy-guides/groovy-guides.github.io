@@ -1,0 +1,53 @@
+main {
+padding-left: 16px;
+padding-right: 16px;
+}
+
+.basic-card .novice-card-square.mdl-card .advanced-card-square.mdl-card .intermediate-card-square.mdl-card {
+    height: 320px;
+  }
+
+.novice-card-square > .mdl-card__title {
+    color: #fff;
+    background:
+    bottom right 15% no-repeat #00796b;
+}
+
+.intermediate-card-square > .mdl-card__title {
+    color: #fff;
+    background:
+    bottom right 15% no-repeat #0097a7;
+}
+
+.basic-card > .mdl-card__title {
+    height: 60px;
+    color: #fff;
+    background:
+    bottom right 15% no-repeat #00796b;
+}
+
+.basic-card > .mdl-card__supporting-text {
+    height: 200px;
+}
+
+.basic-card > .mdl-card__actions {
+    height: 60px;
+}
+
+.advanced-card-square > .mdl-card__title {
+    color: #fff;
+    background:
+    bottom right 15% no-repeat #455a64;
+}
+
+.news-card-wide.mdl-card {
+    width: 100%;
+}
+
+.news-card-wide > .mdl-card__title {
+height: 60px;
+}
+
+.news-card-wide > .mdl-card__menu {
+
+}
