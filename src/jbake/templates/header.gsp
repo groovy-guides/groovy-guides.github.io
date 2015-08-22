@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title><%if (content.title) {%>${content.title}<% } else { %>Groovy Guides<% }%></title>
+    <title><%if (content.title) {%>${content.title}<% } else { %>The Groovy Tutorial<% }%></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
+    <meta name="author" content="Duncan Dickinson">
+    <meta name="keywords" content="groovy java">
     <meta name="generator" content="JBake">
 
     <!-- Le styles -->
@@ -23,7 +23,7 @@
 <header class="mdl-layout__header mdl-layout__header--scroll">
     <div class="mdl-layout__header-row">
         <!-- Title -->
-        <h1 class="mdl-layout-title">Groovy Guides</h1>
+        <h1 class="mdl-layout-title">The Groovy Tutorial</h1>
         <!-- Add spacer, to align navigation to the right -->
         <div class="mdl-layout-spacer"></div>
         <!-- Navigation -->
@@ -32,9 +32,8 @@
     </div>
 </header>
 <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Groovy Guides</span>
+    <span class="mdl-layout-title">Groovy Tutorial</span>
     <%include "navigation.gsp"%>
 </div>
 <main class="mdl-layout__content">
     <div class="page-content">
-   

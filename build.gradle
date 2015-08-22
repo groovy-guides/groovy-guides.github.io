@@ -7,7 +7,7 @@ buildscript {
         classpath 'org.pegdown:pegdown:1.5.0'
         classpath 'org.asciidoctor:asciidoctor-java-integration:0.1.4'
         classpath 'org.codehaus.groovy:groovy-all:2.4.4'
-        classpath 'io.github.groovyguides.build:dodgyserver-gradle-plugin:0.1-SNAPSHOT'
+        //classpath 'name.dickinson.duncan:dodgyserver-gradle-plugin:0.1-SNAPSHOT'
     }
 }
 
@@ -18,12 +18,13 @@ plugins {
 
 }
 
-apply plugin: 'io.github.groovyguides.build'
+//apply plugin: 'io.github.groovyguides.build'
 
 jbake {
     version  = jBakeVersion
 }
 
+/*
 task jbakeServerStart(type: io.github.groovyguides.build.BasicWebServerStartTask, dependsOn: jbake) {
     httpPort = 9999
     documentRoot = jbake.output
@@ -32,6 +33,7 @@ task jbakeServerStart(type: io.github.groovyguides.build.BasicWebServerStartTask
 task jbakeServerStop(type: io.github.groovyguides.build.BasicWebServerStopTask) {
     httpPort = 9999
 }
+*/
 
 task publish(type: GradleBuild) {
     buildFile = 'publish.gradle'

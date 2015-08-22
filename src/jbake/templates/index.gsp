@@ -1,10 +1,14 @@
 <%include "header.gsp"%>
 
+<!--
 <%include "guide-cards.gsp"%>
+-->
 
+<!--
 <div class="mdl-grid">
     <div class="mdl-cell mdl-cell--10-col">
         <div class="mdl-card news-card-wide">
+
             <div class="mdl-card__title">
                 <h2 class="mdl-card__title-text">News</h2>
             </div>
@@ -22,8 +26,10 @@
                     </a>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
+-->
 
 <%include "footer.gsp"%>
