@@ -9,6 +9,7 @@
     </div>
     <div class="mdl-mini-footer--right-section">
         <p>Baked with <a href="http://jbake.org">JBake ${version}</a></p>
+        <p>All code available on <a href="https://github.com/groovy-tutorial">GitHub</a></p>
     </div>
 </footer>
 
