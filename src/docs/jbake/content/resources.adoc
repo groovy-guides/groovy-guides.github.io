@@ -1,0 +1,6 @@
+title=Groovy Resources
+date=2015-08-22
+type=resourcelisting
+status=published
+~~~~~~
+Testing

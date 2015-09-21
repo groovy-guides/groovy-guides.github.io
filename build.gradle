@@ -1,0 +1,35 @@
+plugins {
+    id 'base'
+    id 'org.ajoberstar.github-pages' version "1.3.0"
+}
+
+ext.jbakeSrc = file('src/docs/jbake')
+
+task bake(type:Exec) {
+    description "Runs jbake over $jbakeSrc and places output into $buildDir"
+    group 'publishing'
+
+    inputs.file jbakeSrc
+    outputs.file buildDir
+
+    args = [jbakeSrc, buildDir]
+    executable 'jbake'
+}
+
+task echo << {
+    for (item in System.properties) {
+        println item
+    }
+}
+
+//See: https://github.com/ajoberstar/gradle-git/wiki/org.ajoberstar.github-pages
+githubPages {
+    repoUri = 'git@github.com:groovy-tutorial/groovy-tutorial.github.io.git'
+    targetBranch = 'master'
+    pages {
+        from buildDir
+    }
+    publishGhPages {
+        dependsOn bake
+    }
+}
