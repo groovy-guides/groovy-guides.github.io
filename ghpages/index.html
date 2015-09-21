@@ -18,33 +18,34 @@
 
     <link rel="shortcut icon" href="favicon.ico">
 </head>
-<body class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
 <!-- Uses a header that scrolls with the text, rather than staying locked at the top -->
-<header class="mdl-layout__header mdl-layout__header--scroll">
-    <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <h1 class="mdl-layout-title">The Groovy Tutorial</h1>
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer"></div>
-        <!-- Navigation -->
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <h1 class="mdl-layout-title">The Groovy Tutorial</h1>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+            <nav class="mdl-navigation">
+    <a class="mdl-navigation__link" href="index.html">Home</a>
+    <a class="mdl-navigation__link" href="resources.html">Resources</a>
+</nav>
+
+
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Groovy Tutorial</span>
         <nav class="mdl-navigation">
     <a class="mdl-navigation__link" href="index.html">Home</a>
     <a class="mdl-navigation__link" href="resources.html">Resources</a>
 </nav>
 
-
     </div>
-</header>
-<div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Groovy Tutorial</span>
-    <nav class="mdl-navigation">
-    <a class="mdl-navigation__link" href="index.html">Home</a>
-    <a class="mdl-navigation__link" href="resources.html">Resources</a>
-</nav>
-
-</div>
-<main class="mdl-layout__content">
-    <div class="page-content">
+    <main class="mdl-layout__content">
+        <div class="page-content" style="min-height: 600px;">
 
 
 <div class="mdl-grid">
@@ -86,24 +87,25 @@
     </div>
 </section>
 
-</div>
-</main>
-<footer class="mdl-mini-footer">
-    <div class="mdl-mini-footer__left-section" style="text-align: center;">
-        <img src="images/g2t_title_page.png" width="100px"><br>
-        <b>The Groovy 2 Tutorial</b><br>
-        <i>An introductory text for budding Groovy developers</i><br>
-        <a href="https://leanpub.com/groovytutorial"><strong>BUY</strong></a>
-    </div>
-    <div class="mdl-mini-footer__right-section">
-        <p>
-            <a href="http://creativecommons.org/licenses/by/3.0/deed.en_US" target="_blank"><img alt="Cc-by" height="31" src="https://licensebuttons.net/l/by/3.0/88x31.png" title="This work is licensed under a Creative Commons Attribution 3.0 Unported License" width="88"></a>
-        </p>
-        <p>Baked with <a href="http://jbake.org">JBake v2.4.0</a></p>
-        <p>All code available on <a href="https://github.com/groovy-tutorial">GitHub</a></p>
-    </div>
-</footer>
+            </div>
 
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section" style="text-align: center;">
+                    <img src="images/g2t_title_page.png" width="100px"><br>
+                    <b>The Groovy 2 Tutorial</b><br>
+                    <i>An introductory text for budding Groovy developers</i><br>
+                    <a href="https://leanpub.com/groovytutorial"><strong>BUY</strong></a>
+                </div>
+                <div class="mdl-mini-footer__right-section" style="text-align: center;">
+                    <p>
+                        <a href="http://creativecommons.org/licenses/by/3.0/deed.en_US" target="_blank"><img alt="Cc-by" height="31" src="https://licensebuttons.net/l/by/3.0/88x31.png" title="This work is licensed under a Creative Commons Attribution 3.0 Unported License" width="88"></a>
+                    </p>
+                    <p>Baked with <a href="http://jbake.org">JBake v2.4.0</a></p>
+                    <p>All code available on <a href="https://github.com/groovy-tutorial">GitHub</a></p>
+                </div>
+            </footer>
+        </main>
+    </div>
 
 </body>
 </html>
