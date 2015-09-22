@@ -18,22 +18,23 @@
 
     <link rel="shortcut icon" href="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>favicon.ico">
 </head>
-<body class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
 <!-- Uses a header that scrolls with the text, rather than staying locked at the top -->
-<header class="mdl-layout__header mdl-layout__header--scroll">
-    <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <h1 class="mdl-layout-title">The Groovy Tutorial</h1>
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer"></div>
-        <!-- Navigation -->
-        <%include "navigation.gsp"%>
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <h1 class="mdl-layout-title">The Groovy Tutorial</h1>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+            <%include "navigation.gsp"%>
 
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Groovy Tutorial</span>
+        <%include "navigation.gsp"%>
     </div>
-</header>
-<div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Groovy Tutorial</span>
-    <%include "navigation.gsp"%>
-</div>
-<main class="mdl-layout__content">
-    <div class="page-content">
+    <main class="mdl-layout__content">
+        <div class="page-content" style="min-height: 600px;">

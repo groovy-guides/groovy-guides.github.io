@@ -22,29 +22,28 @@ url: 'http://www.groovy-tutorial.org/shapes-demo/']
 ]
 %>
 
-<section>
-    <div class="mdl-grid">
-        <%
-        def tags = [:]
-        guides.each { item -> %>
-        <div class="mdl-cell mdl-cell--4-col">
-            <div class="mdl-card mdl-shadow--16dp">
-                <div class="mdl-card__title mdl-card--expand">
-                    <h2 class="mdl-card__title-text">${item.title}</h2>
-                </div>
-                <div class="mdl-card__supporting-text">
-                    ${item.description}
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
-                       href="${item.url}">
-                        Go
-                    </a>
-                </div>
+
+<div class="mdl-grid">
+    <%
+    def tags = [:]
+    guides.each { item -> %>
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+        <div class="mdl-card mdl-shadow--16dp">
+            <div class="mdl-card__title mdl-card--expand">
+                <h2 class="mdl-card__title-text">${item.title}</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+                ${item.description}
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                   href="${item.url}">
+                    Go
+                </a>
             </div>
         </div>
-        <%}%>
     </div>
-</section>
+    <%}%>
+</div>
 
 <%include "footer.gsp"%>
