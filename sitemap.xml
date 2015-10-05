@@ -3,6 +3,11 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     
     <url>
+        <loc>http://www.groovy-tutorial.org/GettingStarted.html</loc>
+        <lastmod>2015-10-05</lastmod>
+    </url>
+    
+    <url>
         <loc>http://www.groovy-tutorial.org/resources.html</loc>
         <lastmod>2015-08-22</lastmod>
     </url>
