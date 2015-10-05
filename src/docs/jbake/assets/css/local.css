@@ -2,3 +2,24 @@
     width: 100%;
     min-height: 0;
 }
+
+/*
+.mdl-card {
+    background-color: rgb(96, 125, 139);
+}
+
+.mdl-button.mdl-button--colored {
+    color: white;
+}
+
+.mdl-card__title-text {
+    color: white;
+}
+*/
+
+.mdl-card__supporting-text {
+    color: black;
+    font-size: 0.8em;
+    background-color: white;
+}
+

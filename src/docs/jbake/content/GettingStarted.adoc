@@ -1,0 +1,36 @@
+title=Getting Started
+date=2015-10-05
+type=page
+status=published
+~~~~~~
+
+=== Pre-requisite skills
+The tutorials on this website are aimed at people with the following skills:
+
+* Writing commands on a command line or terminal
+* Reading programming code
+
+In order to keep the tutorials short, little time is spent explaining the Groovy syntax beyond any complexities used in the tutorial. If you're new to Groovy then the http://www.groovy-lang.org/documentation.html[Groovy Documentation] and https://leanpub.com/groovytutorial[The Groovy 2 Tutorial] will be very useful references.
+
+I encourage you to just try out the tutorials - problems are just puzzles and solutions are probably just a web search away.
+
+=== Toolset
+The tutorials on this website are predominantly based on the following technologies:
+
+* http://www.oracle.com/technetwork/java/javase/downloads/index.html[The Java Development Kit (JDK) 8]
+* http://groovy-lang.org/[The Groovy programming language]
+* https://www.gradle.org/[The Gradle build tool]
+
+A Gradle build script will be provided with each tutorial and this will operate on your system provided you have JDK 8 installed. The build script uses the wonderful https://docs.gradle.org/current/userguide/gradle_wrapper.html[Gradle Wrapper] and will automatically download the Groovy and Gradle systems needed to get you up and running. If you ever want to see a list of possible options for running the tutorial code, just type the following in the command line:
+
+* For UNIX-based systems: `./gradlew tasks`
+* For Windows-based systems: `gradlew.bat tasks`
+
+Note that it's best to run these commands from the directory in which the `build.gradle` file is located.
+
+If you wish to install a Groovy or Gradle as applications on your system, please refer each system's website for installation instructions. My advice to those on a UNIX-based system (e.g. Mac OS X or Linux) would be to use the excellent http://sdkman.io/[SDKMAN!] tool as it provides the ability to install a number of systems (Groovy, Grails, Gradle are just a few) and manage various versions of each.
+
+=== Accessing the tutorial files
+Each tutorial will provide a link to download the code files and or clone the repository from https://github.com/groovy-tutorial[GitHub].
+
+If you're new to Git then downloading the files is your best bet. However, it's a really useful tool to learn and  https://desktop.github.com/[GitHub Desktop] makes it easier to get started.
